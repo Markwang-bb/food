@@ -7,7 +7,11 @@ interface RouteError {
 }
 
 const ErrorPage: React.FC = () => {
-  const error = useRouteError() as RouteError;
+  const error = useRouteError() as RouteError | null;
+
+  const errorMessage = error
+    ? error.statusText || error.message || "未知错误"
+    : "抱歉,发生了未知错误";
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 p-4">
@@ -15,7 +19,7 @@ const ErrorPage: React.FC = () => {
         <h1 className="text-6xl font-bold text-gray-800 mb-4">4😵4</h1>
         <h2 className="text-3xl font-semibold text-gray-700 mb-4">哎呀!出错了</h2>
         <p className="text-xl text-gray-600 mb-6">
-          {error.statusText || error.message || "抱歉,我们找不到您要找的页面。"}
+          {errorMessage}
         </p>
         <div className="mb-8">
           <span className="text-5xl animate-bounce inline-block">🍽️</span>
