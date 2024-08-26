@@ -8,10 +8,6 @@
 - 动画效果增强用户体验
 - 响应式设计,适配各种设备
 
-## 在线演示
-
-访问 [https://你的用户名.github.io/仓库名](https://你的用户名.github.io/仓库名) 来体验这个应用。
-
 ## 技术栈
 
 - React
@@ -24,12 +20,12 @@
 
 1. 克隆仓库
    ```
-   git clone https://github.com/你的用户名/仓库名.git
+   gcl git@github.com:Markwang-bb/food.git
    ```
 
 2. 安装依赖
    ```
-   cd 仓库名
+   cd food
    npm install
    ```
 
