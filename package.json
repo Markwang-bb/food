@@ -2,9 +2,9 @@
   "name": "food",
   "private": true,
   "version": "0.0.1",
+  "homepage": "https://Markwang-bb.github.io/food",
   "type": "module",
   "scripts": {
-    "homepage": "https://Markwang-bb.github.io/food",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",

@@ -1,10 +1,10 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import FoodLottery from './components/FoodLottery';
 import Home from './components/Home';
 import ErrorPage from "./components/ErrorPage";
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Home />,
