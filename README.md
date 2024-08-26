@@ -1,30 +1,61 @@
-# React + TypeScript + Vite
+# 选择困难症解决器
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+这是一个有趣的小应用,帮助那些在选择食物时犯难的人。当你不知道吃什么的时候,让我们的抽签器来帮你决定!
 
-Currently, two official plugins are available:
+## 功能特点
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 随机选择食物
+- 动画效果增强用户体验
+- 响应式设计,适配各种设备
 
-## Expanding the ESLint configuration
+## 在线演示
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+访问 [https://你的用户名.github.io/仓库名](https://你的用户名.github.io/仓库名) 来体验这个应用。
 
-- Configure the top-level `parserOptions` property like this:
+## 技术栈
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- React
+- TypeScript
+- Vite
+- React Router
+- Tailwind CSS
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 本地运行
+
+1. 克隆仓库
+   ```
+   git clone https://github.com/你的用户名/仓库名.git
+   ```
+
+2. 安装依赖
+   ```
+   cd 仓库名
+   npm install
+   ```
+
+3. 启动开发服务器
+   ```
+   npm run dev
+   ```
+
+4. 打开浏览器访问 `http://localhost:5173`
+
+## 构建和部署
+
+1. 构建项目
+   ```
+   npm run build
+   ```
+
+2. 部署到GitHub Pages
+   ```
+   npm run deploy
+   ```
+
+## 贡献
+
+欢迎提交问题和拉取请求。对于重大更改,请先开issue讨论您想要改变的内容。
+
+## 许可证
+
+[MIT](https://choosealicense.com/licenses/mit/)
