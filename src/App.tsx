@@ -1,12 +1,17 @@
-import { useState } from 'react'
+import {BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import FoodLottery from './components/FoodLottery'
+import Home from './components/Home'
+import ErrorPage from './components/EorrPage'
 
 function App() {
-  const [] = useState(0)
-
   return (
-   <div>
-    hi
-   </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/foodlottery' element={<FoodLottery/>}/>
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </Router>
   )
 }
 
